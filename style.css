@@ -107,8 +107,15 @@ body::-webkit-scrollbar-thumb{
     margin-top: 20vw;
     position: absolute;
     margin: 35vw;
-    margin-left: 75vw;
+    margin-left: 69.4vw;
     
+}
+
+#earth{
+    height: 20vw;
+    width: 25vw;
+    position: absolute;
+    margin: 40vw 71.5vw;
 }
 /* #circle2{
     font-size: 3vh;
