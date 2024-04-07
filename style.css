@@ -149,19 +149,19 @@ body::-webkit-scrollbar-thumb{
   } */
 
 .button {
-    position: absolute;
-    padding: 16px 30px;
+    position: relative;
+    padding: 0vw 8vw;
     font-size: 1.5rem;
     color: var(--color);
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
-    text-shadow: 0 0 15px var(--color);
+    border: 0.2vw solid rgba(0, 0, 0, 0.5);
+    border-radius: 1vw;
+    text-shadow: 0 0 2vw var(--color);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     transition: 0.5s;
     z-index: 1;
-    margin: 47vw 4vw;
+    margin: 49vw -35vw;
 }
 
 #page2{
