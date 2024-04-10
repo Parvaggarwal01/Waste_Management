@@ -89,6 +89,58 @@
         <p>Exposure to infectious medical waste can lead to the transmission of diseases such as HIV, hepatitis, and other infections. Healthcare workers, waste handlers, and communities living near disposal sites are particularly vulnerable to these health risks.</p>
         <!-- <div id="circle3"> </div> -->
       </div>
+      <div id="page4">
+        <h1>Waste Management Solutions</h1>
+        <div class="card-container">
+          <div class="card" onclick="openOverlay1()">
+            <div class="face front">
+              <img id="recycle" src="resources/images/noun-recycle-1321767.png" alt="">
+            </div>
+            <div class="face back">
+              Recycling
+            </div>
+          </div>
+        
+          <div class="card" onclick="openOverlay2()">
+            <div class="face front">
+              <img id="recycle" src="resources/images/noun-composting-6617233.png" alt="">
+            </div>
+            <div class="face back">
+              Composting
+            </div>
+          </div>
+        
+          <div class="card" onclick="openOverlay3()">
+            <div class="face front">
+              <img id="recycle" src="resources/images/noun-waste-to-energy-5378614.png" alt="">
+            </div>
+            <div class="face back">
+              Waste-to-Energy
+            </div>
+          </div>
+        </div>
+        
+        <div class="overlay1" id="overlay1" onclick="closeOverlay1()">
+          <div class="overlay-content">
+            <h3>Recycling</h3>
+            Recycling is a process where materials such as paper, plastics, glass, and metals are collected, sorted, and processed to be reused in the production of new products. Recycling helps conserve natural resources, reduce energy consumption, and minimize waste sent to landfills. The process typically involves collection of recyclable materials from households and businesses, sorting them into different categories, and processing them into raw materials that can be used in manufacturing. Commonly recycled items include paper and cardboard, plastic bottles and containers, glass bottles and jars, and aluminum cans.
+          </div>
+        </div>
+        
+        <div class="overlay2" id="overlay2" onclick="closeOverlay2()">
+          <div class="overlay-content">
+            <h3>Composting</h3>
+            Composting is the decomposition of organic waste, such as food scraps, yard trimmings, and plant matter, into nutrient-rich compost through natural processes. Microorganisms, including bacteria, fungi, and insects, break down organic materials into a dark, crumbly substance known as compost. Composting can be done at home or in large-scale facilities. It helps divert organic waste from landfills, reduces greenhouse gas emissions, and produces a valuable soil amendment that improves soil structure, fertility, and water retention. Compost can be used in gardening, landscaping, and agriculture to enrich soil and promote plant growth.
+          </div>
+        </div>
+        
+        <div class="overlay3" id="overlay3" onclick="closeOverlay3()">
+          <div class="overlay-content">
+            <h3>Waste-to-Energy</h3>
+            Waste-to-energy (WTE) technologies convert non-recyclable waste into energy, typically in the form of electricity, heat, or fuel. Common methods include incineration, gasification, and pyrolysis, which use heat to break down waste materials and generate energy. WTE facilities can help reduce the volume of waste sent to landfills, recover energy from waste, and contribute to renewable energy production. However, WTE processes must adhere to strict environmental regulations to minimize air emissions, ash disposal, and other environmental impacts.
+          </div>
+        </div>
+      </div>
     <script src="resources/scripts/gsap.min.js"></script>
     <script src="resources/scripts/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

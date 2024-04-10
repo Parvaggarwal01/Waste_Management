@@ -318,3 +318,114 @@ body::-webkit-scrollbar-thumb{
     /* float: left; */
     position: absolute;
 }
+
+#page4{
+    height: 110vh;
+    width: 100%;
+    /* background-color: #a8df8e; */
+}
+
+#page4 h1{
+    text-align: center;
+    font-size: 3vw;
+    color: #000;
+    margin-top: 5vw;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px; 
+    margin: 20px auto;
+  }
+
+  .card {
+    width: calc(33.33% - 20px); 
+    height: 260px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    cursor: pointer;
+  }
+
+  #recycle{
+    height: 7vw;
+    width: 7vw;
+  }
+
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+
+  .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card .front {
+    background-color: #62D288;
+    border-radius: 10%;
+  }
+
+  .card .back {
+    background-color: #62D288;
+    transform: rotateY(180deg);
+    color: white;
+    border-radius: 10%;
+  }
+
+  .overlay1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overlay-content {
+    background-color: #62D288;
+    padding: 20px;
+    border-radius: 5vw;
+    margin: 10vw;
+  }
+
+  .overlay-content h3{
+    text-align: center;
+  }
