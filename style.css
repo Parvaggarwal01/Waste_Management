@@ -320,7 +320,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #page4{
-    height: 110vh;
+    height: 60vh;
     width: 100%;
     /* background-color: #a8df8e; */
 }
@@ -424,8 +424,132 @@ body::-webkit-scrollbar-thumb{
     padding: 20px;
     border-radius: 5vw;
     margin: 10vw;
+    text-align: center;
   }
 
   .overlay-content h3{
     text-align: center;
   }
+
+  #page5{
+    height: 90vh;
+    width: 100%;
+  }
+
+  #page5 h1{
+    text-align: center;
+    font-size: 3vw;
+    color: #000;
+    margin-top: 5vw;
+  }
+
+  #map{
+    height: 30vw;
+    width: 30vw;
+    color: #62D288;
+    margin-top: 4vw;
+    margin-left: 65vw;
+    border-radius: 50%;
+  }
+
+  .leaflet-popup-content {
+    /* color: #000;  */
+    background-color: #62D288;
+  }
+
+  #page5 h3{
+    /* text-align: center; */
+    font-size: 2vw;
+    color: #000;
+    /* margin-top: 5vw; */
+    margin-left: 2vw;
+    margin-top: -10vw;
+    color: #62D288;
+
+  }
+
+  #circle4{
+    /* font-size: 3vh; */
+    background-color: #62D288;
+    height: 35vw;
+    width: 35vw;
+    /* border-radius: 50%; */ 
+    display: inline-block;
+    margin-top: 5.7vw;
+    margin-right: 10vw;
+    position: absolute;
+    /* margin: 35vw; */
+    /* margin-bottom: 10vw; */
+    margin-left: 62.5vw;
+    /* background-color: red; */
+    /* width: 200px;
+    height: 180px; */
+    border: transparent;
+    border-radius: 50%;
+    opacity: 0.50;
+    /* border-top-left-radius: 110px;   */
+    /* border-top-right-radius: 110px; */
+    /* float: left; */
+    position: absolute;
+}
+
+#page6{
+    height: 70vh;
+    width: 100%;  
+}
+
+#page6 h1{
+    text-align: left;
+    font-size: 4vw;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 5vw;
+    margin-left: 2vw;
+}
+
+#page6 #element{
+    color: #000;
+}
+
+#page6 img{
+    margin-left: 70vw;
+    align-items: right;
+    justify-content: right;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 25px;
+}
+
+#page6 p{
+    color: #000;
+    font-size: 1.5vw;
+    text-align: left;
+    margin-top: -20vw;
+    padding-left: 3vw;
+    padding-right: 40vw;
+}
+
+#btn{
+    width: 25%;
+    height: 4vw;
+    background: #00c096;
+    border: none;
+    outline: none;
+    border-radius:40px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 6vw;
+    margin-left: 2vw;
+}
+
+#hr2{
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 12px;
+    background: black;
+    margin-bottom: 50px;
+}

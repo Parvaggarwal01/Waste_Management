@@ -12,19 +12,22 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>EcoHub</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body { margin: 0; padding: 0; }
+    </style>
 </head>
 
 <body>
     <!-- NAV BAR -->
     <div id="nav">
       <a href="#page1"><img src="resources/images/logo.png" alt="" /></a>
-      <a href="#page2"><h3 class="animation">ISSUES</h3></a>
-      <a href="#page5"><h3 class="animation">TRACKS</h3></a>
-      <a href="#page6"><h3 class="animation">RECOMMENDATIONS</h3></a>
-      <a href="#page7"><h3 class="animation">GARDENS</h3></a>
-      <h3 class="animation">Centers</h3>
-      <h3 class="animation">Bussiness</h3>
+      <a href="#chemical"><h3 class="animation">Chemical</h3></a>
+      <a href="#electronic"><h3 class="animation">Electronic</h3></a>
+      <a href="#Medical"><h3 class="animation">Medical</h3></a>
+      <a href="#solution"><h3 class="animation">Solutions</h3></a>
+      <a href="#footprint"><h3 class="animation">Carbon Foot Prints</h3></a>
+      <!-- <h3 class="animation">Bussiness</h3>  -->
     </div>
     <!-- BACKGROUND IMAGE -->
     <!-- <img id="img"src="resources/images/background.jpg" alt=""> -->
@@ -53,9 +56,10 @@
           <p>Effective waste management is more than just collecting and disposing of trash. It encompasses a comprehensive approach to minimizing waste generation, maximizing recycling and reuse opportunities, and ensuring the safe and responsible disposal of hazardous materials.</p>
           <p>The consequences of inadequate waste management are far-reaching, impacting not only the environment but also public health, economy, and social well-being. From pollution of air, water, and soil to the depletion of natural resources and the proliferation of health risks, poorly managed waste poses significant threats to ecosystems and human communities alike.</p>
           <p>Therefore, establishing efficient waste management systems is essential for mitigating these risks and promoting sustainable development. By reducing the amount of waste sent to landfills, recycling valuable materials, and implementing innovative waste-to-energy solutions, we can minimize our ecological footprint and move towards a more circular economy.</p>
-          <p>Through this website, we aim to raise awareness about the importance of proper waste management practices, provide valuable information and resources, and inspire individuals, businesses, and communities to take meaningful actions towards a cleaner, healthier, and more sustainable future. Join us in our mission to create a world where waste is no longer a problem but a valuable resource for the benefit of all.</p>
+          <p id="chemical">Through this website, we aim to raise awareness about the importance of proper waste management practices, provide valuable information and resources, and inspire individuals, businesses, and communities to take meaningful actions towards a cleaner, healthier, and more sustainable future. Join us in our mission to create a world where waste is no longer a problem but a valuable resource for the benefit of all.</p>
           <div id="circle2"> </div>
         </div>
+        <hr id="hr2">
         <!-- PAGE 3 -->        
         <div id="page3">
           <h1>Chemical Waste</h1>
@@ -64,7 +68,7 @@
           <h2 id="risks">Environmental Risks</h2>
           <p>Chemical waste can contaminate soil, water sources, and the atmosphere through spills, leaks, or improper disposal. This contamination can disrupt ecosystems, harm wildlife, and degrade natural habitats.</p>
           <h2 id="risks">Health Risks</h2>
-          <p>Exposure to toxic chemicals in the environment or workplace can lead to acute or chronic health effects, including respiratory problems, neurological disorders, cancer, and reproductive issues.</p>
+          <p id="electronic">Exposure to toxic chemicals in the environment or workplace can lead to acute or chronic health effects, including respiratory problems, neurological disorders, cancer, and reproductive issues.</p>
           <div id="circle3"> </div>
        </div>
        <!-- PAGE 3 -->        
@@ -75,7 +79,7 @@
         <h2 id="risks">Environmental Risks</h2>
         <p>Improper disposal of e-waste, such as landfilling or incineration, can release hazardous substances like lead, mercury, and brominated flame retardants into the environment. These toxins can pollute soil, water, and air, posing risks to ecosystems and human health.</p>
         <h2 id="risks">Health Risks</h2>
-        <p>Direct exposure to hazardous materials in e-waste or inhalation of toxic fumes during recycling or dismantling processes can cause respiratory problems, skin disorders, neurological damage, and other health issues.</p>
+        <p id="Medical">Direct exposure to hazardous materials in e-waste or inhalation of toxic fumes during recycling or dismantling processes can cause respiratory problems, skin disorders, neurological damage, and other health issues.</p>
         <div id="circle2"> </div>
       </div>
        <!-- PAGE 3 -->        
@@ -86,9 +90,10 @@
         <h2 id="risks">Environmental Risks</h2>
         <p>Improperly managed medical waste can spread pathogens and infectious agents, contaminating soil and water bodies. Pharmaceuticals and chemicals in medical waste can also leach into the environment, impacting aquatic ecosystems and wildlife.</p>
         <h2 id="risks">Health Risks</h2>
-        <p>Exposure to infectious medical waste can lead to the transmission of diseases such as HIV, hepatitis, and other infections. Healthcare workers, waste handlers, and communities living near disposal sites are particularly vulnerable to these health risks.</p>
+        <p id="solution">Exposure to infectious medical waste can lead to the transmission of diseases such as HIV, hepatitis, and other infections. Healthcare workers, waste handlers, and communities living near disposal sites are particularly vulnerable to these health risks.</p>
         <!-- <div id="circle3"> </div> -->
       </div>
+      <hr id="hr2">
       <div id="page4">
         <h1>Waste Management Solutions</h1>
         <div class="card-container">
@@ -100,7 +105,6 @@
               Recycling
             </div>
           </div>
-        
           <div class="card" onclick="openOverlay2()">
             <div class="face front">
               <img id="recycle" src="resources/images/noun-composting-6617233.png" alt="">
@@ -109,7 +113,6 @@
               Composting
             </div>
           </div>
-        
           <div class="card" onclick="openOverlay3()">
             <div class="face front">
               <img id="recycle" src="resources/images/noun-waste-to-energy-5378614.png" alt="">
@@ -119,7 +122,6 @@
             </div>
           </div>
         </div>
-        
         <div class="overlay1" id="overlay1" onclick="closeOverlay1()">
           <div class="overlay-content">
             <h3>Recycling</h3>
@@ -140,10 +142,49 @@
             Waste-to-energy (WTE) technologies convert non-recyclable waste into energy, typically in the form of electricity, heat, or fuel. Common methods include incineration, gasification, and pyrolysis, which use heat to break down waste materials and generate energy. WTE facilities can help reduce the volume of waste sent to landfills, recover energy from waste, and contribute to renewable energy production. However, WTE processes must adhere to strict environmental regulations to minimize air emissions, ash disposal, and other environmental impacts.
           </div>
         </div>
+        <hr id="hr2">
       </div>
+      <div id="page5">
+        <div id="circle4"> </div>
+        <h1>Recycling Center near LPU</h1>
+        <div id="map"></div>
+        <a href="https://www.google.com/maps/dir//sodal,+Chota+Saipur+Rd,+palta,+Jalandhar,+Punjab+144004/@31.3506855,75.493148,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x391a5087b7c16ae3:0x707cd058678037e9!2m2!1d75.5755481!2d31.3507118?entry=ttu" target="_blank"><h3>3. XAPER WASTE MANAGEMENT</h3></a>
+        <a href="https://www.google.com/maps/dir/30.3841501,77.2214071/Bajaj+Enterprises,+106,+Baba+Khel,+Basti+Bawa+Khel,+Jalandhar,+Punjab+144013/@30.8538777,75.0607655,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x391a5b81d37f06a7:0x8074d758671c9da8!2m2!1d75.5386985!2d31.334688?entry=ttu" target="_blank" ><h3>2. BAJAJ ENTERPRISES</h3></a>
+        <a href="https://www.google.com/maps/dir//C+38,+S+Canal+St,+Sanjay+Gandhi+Nagar,+Dada+Colony,+Jalandhar,+Punjab+20007/@31.358462,75.4866771,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x391a51989f968295:0xde8df3377b381cd4!2m2!1d75.5690692!2d31.3585111?entry=ttu" target="_blank" ><h3>1. K. J. RECYCLERS (E-WASTE RECYCLERS)</h3></a>
+        
+      </div>
+      <hr id="hr2">
+      <!-- PAGE 6 -->
+      <div id="page6">
+        <h1 id="footprint"><span id="element"></span></h1>
+        <img src="resources/images/noun-carbon-footprint-6127194.png" alt="">
+        <p>Knowing your carbon footprint can be the first step to understanding your impact. It empowers you to take action in all areas of your life. Our carbon footprint calculator makes it easy and can take less than ten minutes. <br> <br> Everything we do has an impact. From how we commute to work, to what we buy at the grocery store, our lifestyle choices contribute to our personal carbon footprint.</p>
+        <a href="https://10002calculatetotalemissionstotalemissionsroundtransportatione.streamlit.app/" target="_blank"><button type="submit" id="btn">Calculate Your Footprint Now</button></a>
+      </div>
+      <hr id="hr2">
+    </div>
     <script src="resources/scripts/gsap.min.js"></script>
     <script src="resources/scripts/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      // Initialize the map
+      var map = L.map('map').setView([31.351418463007636, 75.57554545973126], 13);
+
+      // Add the OpenStreetMap tile layer
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 500,
+      }).addTo(map);
+      var recyclingLocations = [
+          { name: "XAPER WASTE MANAGEMENT", lat: 31.351418463007636, lng: 75.57554545973126 },
+          { name: "BAJAJ ENTERPRISES", lat: 31.37033876904766, lng: 75.5423593623225 },
+          { name: "K. J. RECYCLERS (E-WASTE RECYCLERS)", lat: 31.358504623371385, lng: 75.56907207986013 }
+      ];
+      recyclingLocations.forEach(location => {
+          var marker = L.marker([location.lat, location.lng]).addTo(map);
+          marker.bindPopup(`<b>${location.name}</b>`).openPopup();
+      });
+  </script>
 </body>
 </html>

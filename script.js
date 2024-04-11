@@ -74,12 +74,12 @@ var typed = new Typed('#element', {
     backSpeed: 50,
   });
 
-  gsap.from("#page5 #element, #page5 img,#page5 p, #page5 btn",{
+  gsap.from("#page6 #element, #page6 img,#page6 p, #page6 btn",{
     y: 90,
     opacity: 0,
     duration: 2,
     scrollTrigger:{
-        trigger:"#page5",
+        trigger:"#page6",
         scroller:"body",
        // markers:true,
         start:"top 70%",
@@ -88,12 +88,12 @@ var typed = new Typed('#element', {
     }
 })
 
-gsap.from("#page6 img,#page6 p",{
+gsap.from("#page5 map,#page5 p, #page5 h1, #page5 h3",{
     y: 90,
     opacity: 0,
     duration: 2,
     scrollTrigger:{
-        trigger:"#page6",
+        trigger:"#page5",
         scroller:"body",
        // markers:true,
         start:"top 70%",
@@ -152,27 +152,27 @@ gsap.from("#page9 img,#page9 p,#page9 h3,#page9 i ",{
         scrub:4,
     }
 })
-
 function openOverlay1() {
     document.getElementById("overlay1").style.display = "flex";
-  }
+}
   
-  function openOverlay2() {
+function openOverlay2() {
     document.getElementById("overlay2").style.display = "flex";
-  }
+}
   
-  function openOverlay3() {
+function openOverlay3() {
     document.getElementById("overlay3").style.display = "flex";
-  }
+}
 
-  function closeOverlay1() {
+function closeOverlay1() {
     document.getElementById("overlay1").style.display = "none";
-  }
+}
   
-  function closeOverlay2() {
+function closeOverlay2() {
     document.getElementById("overlay2").style.display = "none";
-  }
+}
   
-  function closeOverlay3() {
+function closeOverlay3() {
     document.getElementById("overlay3").style.display = "none";
-  }
+}
+
