@@ -508,7 +508,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #page6 #element{
-    color: #000;
+    color: #62D288;
 }
 
 #page6 img{
@@ -532,7 +532,7 @@ body::-webkit-scrollbar-thumb{
 #btn{
     width: 25%;
     height: 4vw;
-    background: #00c096;
+    background: #62D288;
     border: none;
     outline: none;
     border-radius:40px;
