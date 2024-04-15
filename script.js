@@ -164,6 +164,10 @@ function openOverlay3() {
     document.getElementById("overlay3").style.display = "flex";
 }
 
+function openOverlay4() {
+    document.getElementById("overlay4").style.display = "flex";
+}
+
 function closeOverlay1() {
     document.getElementById("overlay1").style.display = "none";
 }
@@ -176,3 +180,6 @@ function closeOverlay3() {
     document.getElementById("overlay3").style.display = "none";
 }
 
+function closeOverlay4() {
+    document.getElementById("overlay4").style.display = "none";
+}

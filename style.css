@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #nav{
-    height: 7vw;
+    height: 6vw;
     width: 100%;
     display: flex;
     background-color: #FDFDFD;
@@ -41,15 +41,15 @@ body::-webkit-scrollbar-thumb{
 }
 
 #nav img{
-    height: 18vw;
+    height: 16vw;
     margin-left: -2vw;
     margin-right: 6vw;
 }
 
 #nav h3{
-    font-size: 1.3vw;
+    font-size: 1vw;
     margin-top: 0.7vw;
-    margin-left: 5vw;
+    margin-left: 3vw;
     text-align: right;
     color: #304b2c;
     font-family: 'Poppins';
@@ -337,7 +337,8 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-around;
     width: 100%;
     max-width: 800px; 
-    margin: 20px auto;
+    margin: 30px auto;
+    /* padding: 2vw; */
   }
 
   .card {
@@ -552,4 +553,47 @@ body::-webkit-scrollbar-thumb{
     height: 12px;
     background: black;
     margin-bottom: 50px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    /* color: #62D288; */
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-color: black;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    /* font-family: 'Bree Serif', serif; */
+    color: #62D288;
+}
+
+#contact h1{
+    color: #62D288;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+footer {
+    margin-top: 80px;
+    background: #62D288;
+    color: white;
+    padding: 9px 15px;
+    text-align: center;
 }
